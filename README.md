@@ -14,8 +14,8 @@ The user is then able to revisit their data at any time, which can help a studen
 ## TODO LIST
 | Task | |
 | --- | --- |
-| Create initial setup process | ❌ |
-| Create database creator | ❌ |
+| Create initial setup process | ✅ |
+| Create database creator | ⚠️ |
 | Create student input process | ❌ |
 | Create student input file process | ❌ |
 | Create viewer for teacher | ❌ |
