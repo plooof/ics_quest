@@ -16,7 +16,7 @@ However, as this project is in cooperation with another department who is planni
 ## TODO LIST
 | Task | |
 | --- | --- |
-| Create working React app | ❌ |
+| Create working React app | ✅ |
 | Create base static websites | ❌ |
 | Create data storage solution | ❌ |
 | Create a data writing and reading solution | ❌ |
