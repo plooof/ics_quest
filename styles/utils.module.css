@@ -81,3 +81,60 @@
 .navBarDropdown {
   float: right;
 }
+
+.dashBox {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .dashBox {
+    flex-direction: column;
+  }
+}
+
+.dashBoxDiv {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  min-width: 31vw;
+  max-width: 98vw;
+  height: 20vh;
+}
+
+.dashBoxDiv h1 {
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.dashGraph {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .dashGraph {
+    flex-direction: column;
+  }
+}
+
+.dashGraphDiv {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  min-width: 48vw;
+  max-width: 98vw;
+  height: 64vh;
+}
+
+.dashGraphDiv h1 {
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+

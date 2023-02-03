@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-import data from '/components/login.json'
+import data from '/components/data/login.json'
 import { useRouter } from "next/router"
 
 const passphrase = 'ics_quest';
