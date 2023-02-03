@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -52,7 +54,6 @@
 }
 
 .navBar {
-  background-color: dodgerblue;
 }
 
 .navBar ul {
@@ -74,7 +75,6 @@
 }
 
 .navBarLogo {
-  background-color: lightblue;
   float: left;
 }
 
@@ -98,16 +98,29 @@
   margin-bottom: 1vw;
   margin-left: 1vw;
   margin-right: 1vw;
-  min-width: 31vw;
+  min-width: 23vw;
   max-width: 98vw;
   height: 20vh;
+  border-radius: 20px;
+}
+
+.dashBoxDiv h3 {
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  margin: 0px;
+  font-family: Open Sans;
 }
 
 .dashBoxDiv h1 {
   color: white;
-  padding: 10px;
+  padding: 0px;
   margin: 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-size: 100px;
+  text-align: right;
+  padding-right: 20px;
+  margin-top: -50px;
+  font-family: Open Sans;
 }
 
 .dashGraph {
@@ -129,12 +142,13 @@
   min-width: 48vw;
   max-width: 98vw;
   height: 64vh;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .dashGraphDiv h1 {
-  color: white;
-  padding: 10px;
-  margin: 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  padding: 0px;
+  margin: 10px;
+  font-family: Open Sans;
 }
 

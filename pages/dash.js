@@ -9,105 +9,71 @@ import logo from '/public/images/logo.png'
 import menu from '/public/images/menu.png'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart, Bar, Line, Scatter, Bubble } from 'react-chartjs-2'
+const { data1, data2, options1, options2 } = require('/public/chart.js');
 
 export default function Home() {
-  const data1 = {
-    labels: ["test1", "test2", "test3"],
-    datasets: [
-      {
-        data: [0.1,0.5,1.0]
-      },
-    ],
-  };
-  const data2 = {
-    labels: ["test1", "test2", "test3"],
-    datasets: [
-      {
-        data: [1.0,0.5,0.1]
-      },
-    ],
-  };
-  const options = {
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-    elements: {
-      line: {
-        tension: 0,
-        borderWidth: 2,
-        borderColor: "rgba(47,97,68,1)",
-        fill: "start",
-        backgroundColor: "rgba(47,97,68,0.3)",
-      },
-      point: {
-        radius: 0,
-        hitRadius: 0,
-      },
-    },
-    scales: {
-      xAxis: {
-        display: false,
-      },
-      yAxis: {
-        display: false,
-      },
-    },
-  };
   return (
     //<Layout>
     <>
       <Head>
         <title>Mary Ward HPE</title>
       </Head>
+      <div style={{backgroundColor: "rgb(241, 243, 248)"}} >
       <section className={utilStyles.navBar}>
         <ul>
           <li className={utilStyles.navBarLogo}>
             <Image
                 src={logo}
                 alt={'MW HPE'}
-                style={{padding:5}}
-                width={52}
-                height={52}
+                style={{margin: 10, marginBottom: -10}}
+                width={53}
+                height={53}
               />
           </li>
           <li className={utilStyles.navBarDropdown}>
             <Image
                 src={menu}
                 alt={'Menu'}
-                style={{padding:5}}
-                width={52}
-                height={52}
+                style={{margin: 10, marginBottom: -10}}
+                width={53}
+                height={53}
               />
           </li>
         </ul>
       </section>
       <section className={utilStyles.dashBox}>
-        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "red"}}>
-          <h1>Visits This Week</h1>
+        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "rgba(8, 178, 110, 1)"}}>
+          <h3>Visits This Week</h3>
+          <h1 id="box1">1</h1>
         </div>
-        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "blue"}}>
-          <h1>placeholder</h1>
+        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "rgba(23, 203, 242, 1)"}}>
+          <h3>placeholder</h3>
+          <h1 id="box2">1</h1>
         </div>
-        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "green"}}>
-          <h1>placeholder</h1>
+        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "rgba(246, 172, 49, 1)"}}>
+          <h3>placeholder</h3>
+          <h1 id="box3">1</h1>
+        </div>
+        <div className={utilStyles.dashBoxDiv} style={{backgroundColor: "rgba(229, 98, 72, 1)"}}>
+          <h3>placeholder</h3>
+          <h1 id="box4">1</h1>
         </div>
       </section>
       <section className={utilStyles.dashGraph}>
-        <div className={utilStyles.dashGraphDiv} style={{backgroundColor: "grey"}}>
+        <div className={utilStyles.dashGraphDiv}>
           <h1>placeholder</h1>
           <div style={{margin:"1vw"}}>
-            <Line data={data1} width={18} height={11} padding={5} options={options}/>
+            <Line data={data1} width={18} height={11} padding={5} options={options1}/>
           </div>
         </div>
-        <div className={utilStyles.dashGraphDiv} style={{backgroundColor: "grey"}}>
+        <div className={utilStyles.dashGraphDiv}>
           <h1>placeholder</h1>
           <div style={{margin:"1vw"}}>
-            <Line data={data} width={18} height={11} padding={5} options={options}/>
+            <Line data={data2} width={18} height={11} padding={5} options={options2}/>
           </div>
         </div>
       </section>
+      </div>
     </>
   )
 }
