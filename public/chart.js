@@ -70,3 +70,5 @@ const data1 = {
       },
     },
   };
+
+export {data1, data2, options1, options2};
