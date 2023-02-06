@@ -1,14 +1,14 @@
-import Head from "next/head"
-import Image from "next/image"
-import Layout from "../components/layout"
-import utilStyles from "../styles/utils.module.css"
-import { getSortedPostsData } from "../lib/posts"
-import Link from "next/link"
-import Date from "../components/date"
-import logo from "/public/images/logo.png"
-import menu from "/public/images/menu.png"
-import { Chart as ChartJS } from "chart.js/auto"
-import { Chart, Bar, Line, Scatter, Bubble } from "react-chartjs-2"
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
+import logo from "/public/images/logo.png";
+import menu from "/public/images/menu.png";
+import { Chart as ChartJS } from "chart.js/auto";
+import { Chart, Bar, Line, Scatter, Bubble } from "react-chartjs-2";
 import { data1, data2, options1, options2 } from "/public/chart.js";
 import useSWR from "swr";
 
@@ -18,7 +18,7 @@ export default function Home() {
 
   const { data, error } = useSWR("/api/basicdata", fetcher);
 
-  if (error) return <div>failed to load </div>
+  if (error) return <div>failed to load</div>
   if (!data) return <div>loading... </div>
 
   const parse = JSON.parse(data);

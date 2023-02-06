@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import CryptoJS from 'crypto-js';
 import data from '/components/data/login.json'
 import { useRouter } from "next/router"
