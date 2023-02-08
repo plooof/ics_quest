@@ -1,0 +1,34 @@
+
+
+.loginLogo {
+    
+}
+
+.logoParent {
+    display: flex;
+    justify-content: center;
+}
+
+.logoChild {
+    max-width: 60vw;
+    min-width: 10vw;
+}
+
+@media (max-width: 800px) {
+    .logoChild {
+        max-width: 100vw;
+        min-width: 10vw;
+    }
+}
+
+.loginFormParent {
+    display: block;
+    text-align: center;
+}
+
+.loginForm {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
